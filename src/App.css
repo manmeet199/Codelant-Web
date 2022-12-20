@@ -2,6 +2,45 @@
   text-align: center;
 }
 
+h1{
+
+  text-align: center;
+
+   padding: 50px;
+
+  
+  
+  }
+ 
+
+
+  p
+  {
+    padding: 20px;
+    font-size: larger;
+    text-align: center;
+    
+  }
+  .parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  .image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px solid #000000;
+  }
+  
+  .image2 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border: 1px solid #000000;
+  }
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,6 +52,14 @@
   }
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 40px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -21,7 +68,30 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+}
+.nav-linkb
+{
+  background-color:rgba(128, 0, 128, 0.337);
+  color: black;
+  border-radius: 5px;
+  margin: top 30px;
+  padding: left 40px;
+}
+.nav-linkb:hover {
+  cursor: pointer;
+}
+.nav-linkbk
+{
+  background-color:rgba(128, 0, 128, 0.351);
+  color: black;
+  border-radius: 5px;
+  padding: top 40px;
+
+}
+
+.nav-linkbk:hover{
+  cursor: pointer;
 }
 
 .App-link {
@@ -36,3 +106,61 @@
     transform: rotate(360deg);
   }
 }
+
+.flex-parent {
+  display: flex;
+}
+
+.flex-parent:hover{
+  cursor: pointer;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+button.margin-right {
+  margin-right: 20px;
+  width: 100px;
+}
+
+.gg-play-button {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 22px;
+  height: 22px
+}
+.gg-play-button::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 0;
+  height: 10px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 6px solid;
+  top: 6px;
+  left: 9px
+}
+
+#block_container
+{
+    text-align:center;
+}
+#bloc1, #bloc2
+{
+    display:inline;
+} 
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+/* #bloc1 {
+  margin-left: 0;
+  padding-left: 0;
+} */
